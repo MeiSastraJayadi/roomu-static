@@ -1,0 +1,447 @@
+* {
+    margin: 0; 
+}
+
+body {
+    overflow-x : hidden; 
+}
+
+body .navbar {
+    height : 50px; 
+    width : 100%; 
+    overflow: hidden; 
+    position : fixed; 
+    top : 0; 
+    background-color: rgb(225, 132, 161, 0.7); 
+    display: flex; 
+    align-items: center; 
+    z-index: 5; 
+}
+
+body .navbar li {
+    list-style: none; 
+    width : 100%; 
+}
+
+body .navbar li ul {
+    float: left; 
+    padding: 0; 
+}
+
+body .navbar li .right {
+    float : right; 
+}
+
+.navbar li ul a {
+    padding: 0; 
+    font-size: 24px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    height : 100%; 
+    padding: 10px; 
+    color : #fff; 
+}
+
+.navbar li ul a:hover {
+    background-color: rgb(220, 111, 146); 
+    color : #fff; 
+}
+
+.view {
+    position : relative; 
+    height : 100vh; 
+    width : 100%; 
+    z-index: 3; 
+    background: 
+        url("../img/pexels-katerina-holmes-5905445.jpg"), 
+        linear-gradient(to left, #604d66, #d0c5d3); 
+    background-blend-mode: darken; 
+    background-size: 100% 100%; 
+}
+
+.view .for-title {
+    position : absolute; 
+    text-align: center; 
+    bottom: 7%; 
+    right : 13%; 
+    width : 40%; 
+}
+
+@keyframes in {
+    0% {
+        opacity: 0; 
+        transform: translateX(-50px); 
+    }
+
+    100% {
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
+.view .for-title h1 {
+    font-size: 70px; 
+    font-weight: bold; 
+    color : #e9e1cc;  
+    animation: in 1.5s; 
+    /*-webkit-text-stroke-color: #fff;*/
+    /*-webkit-text-stroke-width: 1.3px; */
+}
+
+@keyframes text-in {
+    0% {
+        opacity: 0; 
+        transform: translateY(-20px); 
+    }    
+    
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.view-2 {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    align-content: center; 
+    flex-direction: column; 
+    width : 100%; 
+    background-color : #f0eadb; 
+    padding-top: 40px; 
+}
+
+.view-2 h2 {
+    margin-top: 50px; 
+    width : 450px; 
+    text-align: center; 
+    font-size: 40px; 
+    color : #6e5773; 
+}
+
+.view-2 .three-column {
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    align-content: center; 
+    /*flex-direction: row; */
+}
+
+.view-2 .out {
+    visibility: hidden; 
+}
+
+.view-2 .three-column > .room {
+    margin: 60px; 
+}
+
+.view-2 .three-column .in {
+    animation: text-in 2s; 
+    visibility: visible; 
+    transition: 1s; 
+}
+
+.view-2 .three-column .room img {
+    width : 250px; 
+    height: 250px; 
+    border-radius: 100%; 
+}
+
+.view-2 .three-column .room .content {
+    margin-top: 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+}
+
+.view-2 .three-column .room .content ion-icon {
+    font-size: 30px; 
+    color : #ea9085; 
+}
+
+.view-2 .three-column .room .content h3 {
+    margin-left: 10px; 
+    font-size: 30px; 
+    color : #8b6e91; 
+}
+
+.view-3 {
+    background-color: #f99fa8; 
+    display: flex; 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center; 
+}
+
+.view-3 > div {
+    display: flex; 
+    flex-direction: column; 
+    margin: 30px; 
+}
+
+.view-3 .partition {
+    height: 300px; 
+    width : 10px; 
+    border-radius: 20px; 
+    background-color: #6c567b; 
+}
+
+.view-3 h2 {
+    color : #534257;  
+}
+
+.view-3 .for-btn {
+    width : 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+}
+
+.view-3 .for-login h2 {
+    margin-bottom: 20px; 
+    font-size: 60px; 
+    font-weight: bold; 
+}
+
+.view-3 .for-login .for-btn {
+    justify-content: flex-start; 
+}
+
+.view-3 .for-btn button {
+    font-size: 20px; 
+    padding: 20px; 
+    background-color: #7d3649; 
+    border: none; 
+    color: #fff; 
+}
+
+.view-3 .for-btn button:hover {
+    background-color: #592634; 
+    cursor: pointer; 
+}
+
+.view-3 .for-login button {
+    font-size: 40px;  
+    font-weight: bold; 
+    margin-left : 100px; 
+}
+
+.view-3 .for-regis h2 {
+    font-size: 40px; 
+    font-weight: bold; 
+}
+
+.view-3 .for-regis button {
+    font-weight: bold; 
+    margin-top: 20px; 
+}
+
+.view-4 {
+    position: relative; 
+    height: 157vh; 
+    background-image: linear-gradient(to bottom, #cec3d5, #e7e1ea); 
+    background-color: #cec3d5; 
+}
+
+.view-4 h2 {
+    position: absolute; 
+    left: 29%; 
+    top: 30%; 
+    font-size: 70px; 
+    font-weight: bold; 
+    color : #513f5a; 
+}
+
+.view-4 svg {
+    width : 100%; 
+}
+
+.view-4 .content {
+    position: absolute; 
+    width : 100%; 
+    top: 43%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+}
+
+.view-4 .content table {
+    align-content: center; 
+    border-collapse: collapse; 
+}
+
+.view-4 .content table tr {
+    margin-bottom: 1px; 
+}
+
+
+.view-4 .content table tr th {
+    padding: 20px; 
+    background-color:  #cec3d5; 
+    font-size: 40px; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+.view-4 .content table tr td {
+    border-bottom: 2px solid #cec3d5;  
+    font-size: 20px; 
+    border-top : 10px solid #cec3d5;  
+    padding: 10px; 
+    text-align: center; 
+}
+
+
+.view-4 .content table tr:not(.header):nth-child(even) {
+    background-color: #fff; 
+}
+
+.view-4 .content table tr:not(.header):nth-child(odd) {
+    background-color:  #775e87; 
+    color: #fff; 
+}
+
+.view-4 .content table button {
+    padding: 10px; 
+    background-color: #c98295; 
+    color : #fff; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+}
+
+.view-4 .content table button:disabled {
+    background-color:#e0b8c2; 
+}
+
+.view-4 .content table button:hover:enabled {
+    background-color: #a1455d; 
+    cursor: pointer; 
+}
+
+.view-5 {
+    padding-top: 80px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+    background-color: #e8e0c9; 
+    padding-bottom: 30px; 
+}
+
+.view-5 h2 {
+    margin-bottom: 40px; 
+    font-size: 40px; 
+    font-weight: bold; 
+    color : #513f5a; 
+}
+
+.view-5 .content {
+    width : 100%; 
+    padding-left: 10%; 
+    display: flex; 
+    justify-content: flex-start; 
+    align-content: flex-start; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.view-5 .content .item {
+    padding: 16px; 
+    width : 25%; 
+    height : 70px; 
+    position: relative; 
+    background-color: #c3b4cb; 
+}
+
+.view-5 .content .item .down {
+    padding-bottom: 14px; 
+    position: absolute; 
+    top : 0; 
+    left: 0; 
+    background-color: #000; 
+    color : #fff; 
+    z-index: 5; 
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    align-content: flex-start; 
+}
+
+.view-5 .content .item .down ion-icon {
+    bottom: 1px; 
+    right: 8px; 
+}
+
+.view-5 .content .item .down h3 {
+    width : 90%; 
+    font-size: 20px; 
+    font-weight: bold; 
+    margin: 8px; 
+}
+
+.view-5 .content .item .down ul {
+    list-style: none; 
+    padding: 0; 
+    width : 90%; 
+    margin-left: 8px; 
+}
+
+.view-5 .content .item .wrapper {
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    overflow: hidden; 
+    z-index: 3; 
+}
+
+.view-5 .content .item h3 {
+    font-size: 20px; 
+    color: #fff; 
+    margin-bottom: 14px; 
+}
+
+.view-5 .content .item p {
+    color : #f2f2f2; 
+    font-weight: bold; 
+
+}
+
+.view-5 .content > .item {
+    margin: 10px; 
+}
+
+.view-5 .content ion-icon {
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    font-size: 30px; 
+}
+
+.view-5 .content .wrapper .down {
+    position: absolute; 
+    top : 0; 
+    left: 0; 
+}
+
+footer {
+    background-color: #000; 
+    height: 50px; 
+}
+
+
+
+
+
+
+
+
+

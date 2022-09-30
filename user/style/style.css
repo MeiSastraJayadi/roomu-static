@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+    flex-direction: column; 
+    background-color: #420516; 
+    background-image: url("../img/pexels-marc-mueller-380768.jpg"); 
+    background-repeat: no-repeat; 
+    background-blend-mode: exclusion; 
+    /*background-size: 100% 100%; */
+    background-size: cover; 
+}
+
+
+body .for-image {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center; 
+}
+
+body .for-image h1 {
+    font-size: 50px; 
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+body .title {
+    margin-top: 30px; 
+} 
+
+.container {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+    margin-top : 25px; 
+    border-radius: 10px; 
+    padding: 20px; 
+    width : 50%; 
+    background-color: rgba(170, 34, 40, 0.65); 
+}
+
+.container select {
+    outline : none !important; 
+}
+
+.container form li {
+    position: relative; 
+    list-style: none; 
+}
+
+.container form li ul {
+    margin-bottom: 5px; 
+}
+
+.container form .block {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+}
+
+.block.second {
+    margin-top : 30px; 
+}
+
+.container form .block .two-column {
+    display : flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    align-content: center; 
+    padding-top: 15px; 
+}
+
+.container input {
+    outline: none !important; 
+    background-color: rgba(170, 34, 40, 0); 
+    padding-left: 5px; 
+    border: none; 
+    width : 200px; 
+    border-bottom: 1px solid #ffb3b3; 
+    caret-color: #ddd; 
+    color : #ddd; 
+}
+
+.container input:focus {
+    border-bottom: 1px solid #ff3333; 
+}
+
+.container label {
+    color : #ffffff; 
+    font-weight: bold; 
+}
+
+.container label:not(.jurusan) {
+    position : absolute; 
+    bottom: 5px; 
+    left: 37px; 
+    transition: 0.2s; 
+} 
+
+.container label.active {
+    bottom: 30px; 
+    transition: 0.2s; 
+}
+
+.block .two-column > li {
+    margin: 10px; 
+}
+
+.for-button {
+    padding: 8px;
+    padding-bottom: 10px; 
+    width : 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+}
+
+.for-button button {
+    padding: 14px; 
+    font-size: 20px; 
+    background-color: #222; 
+    border: none; 
+    font-weight: bold; 
+    color : #ffffff; 
+}
+
+.for-button button:hover {
+    background-color: #000; 
+    color : #fff; 
+}
+
+
+
+
+

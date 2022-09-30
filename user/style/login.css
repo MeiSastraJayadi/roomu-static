@@ -1,0 +1,18 @@
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+.container {
+    width : 40%; 
+}
+
+.container form input {
+    margin-top: 50px; 
+    width : 300px; 
+}
+
+.for-button button {
+    margin-top: 20px; 
+}
+

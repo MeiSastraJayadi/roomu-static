@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link type="text/css" rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="style/style.css"/>
+    </head>
+    <body>
+        <div class="for-image">
+            <h1 class="title">Registration Form</h1>
+            <div class="container">
+                <form>
+                    <div class="block">
+                        <div class="two-column">
+                            <li>
+                                <ul>
+                                    <label for="name">Nama</label>
+                                </ul>
+                                <ul>
+                                    <input name="name"  type="text" required/>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <label for="nim">NIM</label>
+                                </ul>
+                                <ul>
+                                    <input name="nim" type="text"  required/>
+                                </ul>
+                            </li>
+                        </div>
+                        <li>
+                            <ul>
+                                <label for="jurusan" class="jurusan">Jurusan</label>
+                            </ul>
+                            <ul>
+                                <select name="jurusan" class="form-select">
+                                    <option value="sk">Sistem Komputer</option>
+                                    <option value="mti">Manajemen Data dan Informasi</option>
+                                    <option value="kab">Komputer Akutansi dan Bisnis</option>
+                                    <option value="dgm">Desain Grafis dan Multimedia</option>
+                                </select>
+                            </ul>
+                        </li>
+                    </div>
+
+                    <div class="block second">
+                        <div class="two-column">
+                            <li>
+                                <ul>
+                                    <label for="username">Username</label>
+                                </ul>
+                                <ul>
+                                    <input name="username" type="username"  required/>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <label for="email">Email</label>
+                                </ul>
+                                <ul>
+                                    <input name="email" type="email"  required/>
+                                </ul>
+                            </li>
+                        </div>
+
+                        <div class="two-column">
+                            <li>
+                                <ul>
+                                    <label for="password1">Password</label>
+                                </ul>
+                                <ul>
+                                    <input name="password1" type="password"  required/>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <label for="password2">Password Confirm</label>
+                                </ul>
+                                <ul>
+                                    <input name="password2" type="password" required/>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="for-button">
+                        <button type="submit" name="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script src="js/regis.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
